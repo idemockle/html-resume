@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Kent's Resume</title>
+    <!-- <link rel="stylesheet" href="meyer-reset.css"> -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <main id="container">
+        <section id="sidebar">
+            <article id="contact-info">
+                <ul>
+                    <li>Atlanta, GA</li>
+                    <li>(305) 458-1006</li>
+                    <li>iank1226@gmail.com</li>
+                </ul>
+            </article>
+            <article id="languages" class="sidebar-toplevel">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>R</li>
+                    <li>C</li>
+                </ul>
+            </article>
+            <article id="tools" class="sidebar-toplevel">
+                <h2>Tools</h2>
+                <ul>
+                    <li>Spring Boot</li>
+                    <li>Spring Data</li>
+                    <li>Spark/PySpark</li>
+                    <li>Pandas</li>
+                    <li>Maven</li>
+                    <li>Git</li>
+                    <li>AWS - S3, Batch, Lambda</li>
+                    <li>Collaboration tools - Jira, Confluence</li>
+                </ul>
+            </article>
+            <article id="education" class="sidebar-toplevel">
+                <h2>Education</h2>
+                <ul>
+                    <li>PhD Chemical Engineering, University of Florida - Aug 2016</li>
+                    <li>BS Chemical Engineering, Georgia Institute of Technology - Dec 2011</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h1>Ian Kent</h1>
+            <article id="summary" class="main-toplevel">
+                <h2>Summary</h2>
+                <ul>
+                    <li>Backend software engineer with 6 years professional coding experience working in multi-disciplinary, Agile teams</li>
+                    <li>Passionate coder who believes in doing things the right way, both inside and outside of the codebase</li>
+                    <li>Looking for a role where I can make use of (and continue to grow) my technical and leadership skills while continually delivering high-quality software</li>
+                </ul>
+            </article>
+            <article id="work-experience" class="main-toplevel">
+                <h2>Experience</h2>
+                <section id="t-mobile" class="job-info">
+                    <h3>Software Engineer, T-Mobile</h3>
+                    <p class="job-meta">Atlanta, GA - July 2020 to Present</p>
+                    <ul>
+                        <li>Backend engineer within Supply Chain org - focusing on aggregating device lifecycle data to enable business flows such as return processing and device activation</li>
+                        <li>Developed microservices with various functions including asynchronous data ingestion (following the pub-sub model) and REST APIs</li>
+                        <li>Took part in various modernization initiatives, such as upgrading Spring Boot microservices from Java 8 to Java 17, Spring Boot 1 to Spring Boot 2, migrating deployments from Cloud Foundry to Kubernetes</li>
+                        <li>Heavily contributed to internal libraries, encouraging standardization of several microservice functions (database interaction, metrics reporting, endpoint security)</li>
+                        <li>Led initiative to migrate a rule engine system from IBM ODM to Spring Boot microservices based on Apache Drools</li>
+                        <li>Primary tools: Spring Boot, Cassandra, internal message broker system based on RabbitMQ and Kafka, Prometheus, Grafana, Spark, Swagger/OpenAPI</li>
+                    </ul>
+                </section>
+                <section id="revenue-analytics" class="job-info">
+                    <h3>Software Engineer II, Revenue Analytics</h3>
+                    <p class="job-meta">Atlanta, GA - Oct 2019 to May 2020</p>
+                    <ul>
+                        <li>Worked within a cross-functional team to automate extract-transform-load jobs</li>
+                        <li>Used Jupyter Notebook for prototyping, pandas for data transformation/processing, and AWS Step Functions, Batch, and Lambda for automation.</li>
+                        <li>Understood and implemented complex business requirements for a product oriented towards media ad sales. Ultimate goal was to optimize placement of ads in broadcast schedules to maximize revenue.</li>
+                    </ul>
+                </section>
+                <section id="rwc" class="job-info">
+                    <h3>Data Scientist / Manufacturing Test Engineer, RWC (StreamLabs Water)</h3>
+                    <p class="job-meta">Atlanta, GA - May 2017 to Oct 2019</p>
+                    <ul>
+                        <li>Wrote Python libraries as well as graphical and command line utilities to retrieve and analyze manufacturing test data (pandas, ggplot2, boto3)</li>
+                        <li>Developed, prototyped, and tested a lightweight anomaly detection algorithm to identify unusually high water usage - marketed in the product as “Smart Alerts”</li>
+                        <li>Defined new features from ultrasonic waveform readings, improving the ability of an IoT device to distinguish between plumbing pipe types</li>
+                        <li>Developed manufacturing quality control tests using visual inspection with webcams (OpenCV, pyQt)</li>
+                        <li>Created DynamoDB database and corresponding Python module for tracking programming and activation of StreamLabs Control products</li>
+                        <li>Documented performance metrics of products on an internal wiki (Confluence)</li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+    </main>
+</body>
