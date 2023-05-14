@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Quicksand:wght@500;700&display=swap');
+
+:root {
+    --main-color: #145d74;
+    --sidebar-color: white;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand';
+}
+
+strong {
+    color: var(--main-color);
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1024px;
+    /* max-height: 1325.2px; */
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Noto Sans';
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-top: 0px;
+    font-weight: bold;
+    /* TODO: Get Bold Noto Sans */
+}
+
+#header-job-title {
+    /* padding-left: .5em; */
+    font-size: .6em;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    /* vertical-align: text-top; */
+}
+
+h1, h2 {
+    padding-bottom: .2em;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+h1, .main-content h2 {
+    border-bottom-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.job-info > h3 {
+    margin-bottom: 0;
+}
+
+.job-meta {
+    margin-top: .2em;
+    margin-bottom: .6em;
+}
+
+.job-info > ul {
+    margin-top: 0;
+}
+
+/* --- */
+
+.sidebar {
+    padding: 20px;
+    background-color: var(--main-color);
+    color: var(--sidebar-color);
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 252px;
+}
+
+.sidebar > h1 {
+    white-space: pre;
+    user-select: none;
+}
+
+.sidebar h2 {
+    border-bottom-color: var(--sidebar-color);
+}
+
+.sidebar-content {
+    padding-left: 1em;
+}
+
+.sidebar-titled-element h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    font-size: 106.25%;
+}
+.sidebar-titled-element p {
+    margin-top: 0;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+.sidebar-list li {
+    margin-bottom: .5em;
+}
+
+
+
+/* DEBUG */
+/* #main-container > section {
+    border: 1px solid salmon;
+} */
+
+@media print {
+    @page {
+        size: auto;
+        margin: 0;
+    }
+    
+    #main-container {
+        margin: 0;
+        border: none;
+        height: 100vh;
+        width: 100vw;
+        max-width: unset;
+        max-height: unset;
+        font-size: .81em;
+    }
+
+    .main-content {
+        flex-shrink: 1;
+    }
+
+    .sidebar {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 2.2in;
+        min-width: unset;
+    }
+
+    * {
+        /* Tell browser to print background colors */
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+        color-adjust: exact !important;                 /* Firefox 48 – 96 */
+        print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+    }
+
+    body {
+        margin: 0; /* Fix print margin for Firefox */
+      }
+}

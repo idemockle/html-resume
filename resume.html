@@ -9,49 +9,68 @@
 </head>
 
 <body>
-    <main id="container">
-        <section id="sidebar">
+    <main id="main-container">
+        <section class="sidebar">
+            <h1> </h1> <!-- Provide spacing to line Contact up with Summary-->
             <article id="contact-info">
-                <ul>
-                    <li>Atlanta, GA</li>
-                    <li>(305) 458-1006</li>
-                    <li>iank1226@gmail.com</li>
-                </ul>
+                <h2>Contact</h2>
+                <div class="sidebar-content">
+                    <article class="sidebar-titled-element">
+                        <h3>Phone</h3>
+                        <p>(305) 458-1006</p>
+                    </article>
+                    <article class="sidebar-titled-element">
+                        <h3>Email</h3>
+                        <p>iank1226@gmail.com</p>
+                    </article>
+                    <article class="sidebar-titled-element">
+                        <h3>Address</h3>
+                        <p>1508 Bubbling Creek Rd NE<br>Brookhaven, GA 30319</p>
+                    </article>
+                </div>
             </article>
             <article id="languages" class="sidebar-toplevel">
                 <h2>Languages</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>R</li>
-                    <li>C</li>
-                </ul>
+                <div class="sidebar-content">
+                    <ul class="sidebar-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>C</li>
+                    </ul>
+                </div>
             </article>
             <article id="tools" class="sidebar-toplevel">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Spring Boot</li>
-                    <li>Spring Data</li>
-                    <li>Spark/PySpark</li>
-                    <li>Pandas</li>
-                    <li>Maven</li>
-                    <li>Git</li>
-                    <li>AWS - S3, Batch, Lambda</li>
-                    <li>Collaboration tools - Jira, Confluence</li>
-                </ul>
+                <h2>Skills</h2>
+                <div class="sidebar-content">
+                    <ul class="sidebar-list">
+                        <li>Spring Boot</li>
+                        <li>REST APIs</li>
+                        <li>Spark/PySpark</li>
+                        <li>Pandas</li>
+                        <li>AWS</li>
+                        <li>Collaboration tools - Jira, Confluence</li>
+                    </ul>
+                </div>
             </article>
             <article id="education" class="sidebar-toplevel">
                 <h2>Education</h2>
-                <ul>
-                    <li>PhD Chemical Engineering, University of Florida - Aug 2016</li>
-                    <li>BS Chemical Engineering, Georgia Institute of Technology - Dec 2011</li>
-                </ul>
+                <div class="sidebar-content">
+                    <article class="sidebar-titled-element">
+                        <h3>PhD</h3>
+                        <p>Chemical Engineering<br>University of Florida<br>Aug 2016</p>
+                    </article>
+                    <article class="sidebar-titled-element">
+                        <h3>BS</h3>
+                        <p>Chemical Engineering<br>Georgia Institute of Technology<br>Dec 2011</p>
+                    </article>
+                </div>
             </article>
         </section>
 
-        <section>
-            <h1>Ian Kent</h1>
+        <section class="main-content">
+            <h1>Ian Kent <span id="header-job-title">Software&nbsp;Engineer</span></h1>
             <article id="summary" class="main-toplevel">
                 <h2>Summary</h2>
                 <ul>
@@ -67,11 +86,11 @@
                     <p class="job-meta">Atlanta, GA - July 2020 to Present</p>
                     <ul>
                         <li>Backend engineer within Supply Chain org - focusing on aggregating device lifecycle data to enable business flows such as return processing and device activation</li>
-                        <li>Developed microservices with various functions including asynchronous data ingestion (following the pub-sub model) and REST APIs</li>
-                        <li>Took part in various modernization initiatives, such as upgrading Spring Boot microservices from Java 8 to Java 17, Spring Boot 1 to Spring Boot 2, migrating deployments from Cloud Foundry to Kubernetes</li>
-                        <li>Heavily contributed to internal libraries, encouraging standardization of several microservice functions (database interaction, metrics reporting, endpoint security)</li>
-                        <li>Led initiative to migrate a rule engine system from IBM ODM to Spring Boot microservices based on Apache Drools</li>
-                        <li>Primary tools: Spring Boot, Cassandra, internal message broker system based on RabbitMQ and Kafka, Prometheus, Grafana, Spark, Swagger/OpenAPI</li>
+                        <li>Developed microservices with various functions including asynchronous data ingestion (following the <strong>Pub-Sub</strong> model) and <strong>REST APIs</strong></li>
+                        <li>Took part in various modernization initiatives, such as upgrading <strong>Spring Boot</strong> microservices from <strong>Java 8</strong> to <strong>Java 17</strong>, Spring Boot 1 to Spring Boot 2, and migrating deployed applications from <strong>Pivotal Cloud Foundry</strong> to <strong>Kubernetes</strong></li>
+                        <li>Heavily contributed to internal libraries, encouraging standardization of several microservice functions (<strong>Cassandra</strong> database interaction, metrics reporting with <strong>Prometheus</strong>, endpoint security via <strong>JWT Bearer tokens</strong>)</li>
+                        <li>Led initiative to migrate a rule engine system from <strong>IBM ODM</strong> to Spring Boot microservices based on <strong>Apache Drools</strong></li>
+                        <li>Additional tools: <strong>pySpark</strong> (data migrations), <strong>Swagger/OpenAPI</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong></li>
                     </ul>
                 </section>
                 <section id="revenue-analytics" class="job-info">
@@ -79,7 +98,7 @@
                     <p class="job-meta">Atlanta, GA - Oct 2019 to May 2020</p>
                     <ul>
                         <li>Worked within a cross-functional team to automate extract-transform-load jobs</li>
-                        <li>Used Jupyter Notebook for prototyping, pandas for data transformation/processing, and AWS Step Functions, Batch, and Lambda for automation.</li>
+                        <li>Used <strong>Jupyter Notebook</strong> for prototyping, <strong>pandas</strong> for data transformation/processing, and <strong>AWS Step Functions</strong>, <strong>Batch</strong>, and <strong>Lambda</strong> for automation.</li>
                         <li>Understood and implemented complex business requirements for a product oriented towards media ad sales. Ultimate goal was to optimize placement of ads in broadcast schedules to maximize revenue.</li>
                     </ul>
                 </section>
@@ -87,11 +106,11 @@
                     <h3>Data Scientist / Manufacturing Test Engineer, RWC (StreamLabs Water)</h3>
                     <p class="job-meta">Atlanta, GA - May 2017 to Oct 2019</p>
                     <ul>
-                        <li>Wrote Python libraries as well as graphical and command line utilities to retrieve and analyze manufacturing test data (pandas, ggplot2, boto3)</li>
+                        <li>Wrote <strong>Python</strong> libraries as well as graphical and command line utilities to retrieve and analyze manufacturing test data (<strong>pandas</strong>, <strong>ggplot2</strong>, <strong>boto3</strong>)</li>
                         <li>Developed, prototyped, and tested a lightweight anomaly detection algorithm to identify unusually high water usage - marketed in the product as “Smart Alerts”</li>
                         <li>Defined new features from ultrasonic waveform readings, improving the ability of an IoT device to distinguish between plumbing pipe types</li>
-                        <li>Developed manufacturing quality control tests using visual inspection with webcams (OpenCV, pyQt)</li>
-                        <li>Created DynamoDB database and corresponding Python module for tracking programming and activation of StreamLabs Control products</li>
+                        <li>Developed manufacturing quality control tests using visual inspection with webcams (<strong>OpenCV</strong>, <strong>pyQt</strong>)</li>
+                        <li>Created a <strong>DynamoDB</strong> database and corresponding Python module for tracking programming and activation of StreamLabs Control products</li>
                         <li>Documented performance metrics of products on an internal wiki (Confluence)</li>
                     </ul>
                 </section>
