@@ -135,7 +135,7 @@ h1, .main-content h2 {
     }
 
     .sidebar {
-        flex-basis: 30vw;
+        flex-basis: 35vw;
         flex-grow: 0;
     }
 
