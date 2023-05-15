@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Quicksand:wght@500;700&display=swap');
 
 :root {
-    --main-color: #072142;
+    --main-color: #223146;
     --sidebar-color: white;
 }
 
@@ -19,7 +19,6 @@ strong {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1024px;
-    /* max-height: 1325.2px; */
     margin: 20px auto;
     border: 1px solid black;
 }
@@ -35,19 +34,20 @@ h1 {
     letter-spacing: .05em;
     margin-top: 0px;
     font-weight: bold;
-    /* TODO: Get Bold Noto Sans */
+    margin-bottom: 0;
 }
 
 #header-job-title {
-    /* padding-left: .5em; */
     font-size: .6em;
     letter-spacing: normal;
     text-transform: capitalize;
-    /* vertical-align: text-top; */
 }
 
 h1, h2 {
     padding-bottom: .2em;
+}
+
+h2 {
     border-bottom-width: 2px;
     border-bottom-style: solid;
 }
@@ -68,6 +68,10 @@ h1, .main-content h2 {
 
 .job-info > ul {
     margin-top: 0;
+}
+
+.main-content li {
+    margin-bottom: .22em;
 }
 
 /* --- */
@@ -95,8 +99,8 @@ h1, .main-content h2 {
 }
 
 .sidebar-titled-element h3 {
-    margin-top: 1.5em;
-    margin-bottom: 0;
+    margin-top: 1em;
+    margin-bottom: .15em;
     font-size: 106.25%;
 }
 .sidebar-titled-element p {
@@ -108,7 +112,7 @@ h1, .main-content h2 {
     padding: 0;
 }
 .sidebar-list li {
-    margin-bottom: .5em;
+    margin-bottom: .8em;
 }
 
 #qrcode {
@@ -126,10 +130,6 @@ h1, .main-content h2 {
 } */
 
 @media screen and (max-width: 720px) {
-    /* .main-content h1 {
-        font-size: 7.78vw;
-    } */
-
     body {
         font-size: 2.22vw;
     }
@@ -157,7 +157,7 @@ h1, .main-content h2 {
     #main-container {
         margin: 0;
         border: none;
-        height: 11in;
+        height: 11in; /* Explicit height an width needed for mobile browsers */
         width: 8.5in;
         max-width: unset;
         max-height: unset;
