@@ -111,6 +111,13 @@ h1, .main-content h2 {
     margin-bottom: .5em;
 }
 
+#qrcode {
+    background-color: white;
+    padding: 5px;
+    display: block;
+    width: 40%;
+    margin: 1.25em auto 0 auto;
+}
 
 
 /* DEBUG */
@@ -143,6 +150,10 @@ h1, .main-content h2 {
         flex-shrink: 0;
         flex-basis: 2.2in;
         min-width: unset;
+    }
+
+    #qrcode {
+        margin-top: 19%;
     }
 
     * {
