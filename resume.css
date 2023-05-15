@@ -125,6 +125,29 @@ h1, .main-content h2 {
     border: 1px solid salmon;
 } */
 
+@media screen and (max-width: 720px) {
+    /* .main-content h1 {
+        font-size: 7.78vw;
+    } */
+
+    body {
+        font-size: 2.22vw;
+    }
+
+    .sidebar {
+        flex-basis: 30vw;
+        flex-grow: 0;
+    }
+
+    .main-content, .sidebar {
+        padding: 1.25em;
+    }
+
+    ul {
+        padding-left: 2.5em;
+    }
+}
+
 @media print {
     @page {
         size: auto;
