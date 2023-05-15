@@ -150,15 +150,15 @@ h1, .main-content h2 {
 
 @media print {
     @page {
-        size: auto;
+        size: letter;
         margin: 0;
     }
     
     #main-container {
         margin: 0;
         border: none;
-        height: 100vh;
-        width: 100vw;
+        height: 11in;
+        width: 8.5in;
         max-width: unset;
         max-height: unset;
         font-size: .81em;
