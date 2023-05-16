@@ -3,6 +3,7 @@
 :root {
     --main-color: #223146;
     --sidebar-color: white;
+    --max-width: 1024px;
 }
 
 body {
@@ -15,11 +16,20 @@ strong {
     color: var(--main-color);
 }
 
+header {
+    max-width: var(--max-width);
+    margin: .5em auto;
+}
+
+header span {
+    white-space: pre;
+}
+
 #main-container {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1024px;
-    margin: 20px auto;
+    max-width: var(--max-width);
+    margin: 0 auto;
     border: 1px solid black;
 }
 
@@ -154,6 +164,10 @@ h1, .main-content h2 {
         margin: 0;
     }
     
+    header {
+        display: none;
+    }
+
     #main-container {
         margin: 0;
         border: none;
